@@ -10,6 +10,7 @@ class AlphaWord extends Model
     {
         return $this->hasMany(Word::class);
     }
+
     protected $guarded = [];
     public $timestamps = false;
 }

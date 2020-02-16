@@ -5,7 +5,7 @@ This is a PHP program that finds anagrams of words according to a database.
 Setup:
 * clone project
 * run composer install
-* copy .env.example to .env =>cp .env.example .env
+* copy .env.example to .env => cp .env.example .env
 * change database host, name, password in .env
 * run php artisan migrate
 * api endpoints:
