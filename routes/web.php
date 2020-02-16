@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::redirect('/', '/find-anagram');
+Route::get('/find-anagram', function(){
+    return view('app');
 });
+
+//Route::get('/wordlist', function($words){
+//    return view('welcome', ['words'=> $words]);
+//});

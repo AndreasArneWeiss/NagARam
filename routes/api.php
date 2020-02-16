@@ -13,6 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::middleware('api')->get('/find-anagram/', 'AnagramController@sort_word');
+Route::middleware('api')->get('/wordlist/', 'DatabaseController@import_wordlist');
